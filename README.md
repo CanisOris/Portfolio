@@ -38,7 +38,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** | List the main features |
 | **Skills practiced** | Describe what you learned |
-| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/dark_patterns.html](Dark Patterns) |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/dark_patterns.html] (Dark Patterns) |
 
 
 
@@ -53,7 +53,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/The_Pet_Shop_Website](Pet Shop) |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/The_Pet_Shop_Website] (Pet Shop) |
 
 
 
@@ -68,7 +68,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/Academy-Cinemas](Cinema)  |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/Academy-Cinemas] (Cinema)  |
 
 
 
