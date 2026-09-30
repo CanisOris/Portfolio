@@ -23,7 +23,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/one_page_website.html](AI Terms) |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/one_page_website.html] (AI Terms) |
 
 
 
