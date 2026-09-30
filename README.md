@@ -6,11 +6,11 @@
 
 | Project | Overview |
 | :-- | :-- |
-| [AI Terms](#01--ai-terms) | AI Terms used and useful links |
-| [Dark Patterns](#02--dark-patterns) | Malicious Design Patterns |
-| [Pet Store](#03--pet-store) | Simple Pet Store Informatin Page |
-| [Academy Cinemas](#04--academy-cinemas) | Theatre Info/Times Design |
-| [Portfolio](#05--portfolio) | Portfolio Project |
+| [AI Terms](#ai-terms) | AI Terms used and useful links |
+| [Dark Patterns](#dark-patterns) | Malicious Design Patterns |
+| [Pet Store](#pet-store) | Simple Pet Store Informatin Page |
+| [Academy Cinemas](#academy-cinemas) | Theatre Info/Times Design |
+| [Portfolio](#portfolio) | Portfolio Project |
 
 ---
 
@@ -23,7 +23,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/one_page_website.html |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/one_page_website.html](AI Terms) |
 
 
 
@@ -38,7 +38,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** | List the main features |
 | **Skills practiced** | Describe what you learned |
-| **Project link** | https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/dark_patterns.html |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/blob/main/One_Page_Website/dark_patterns.html](Dark Patterns) |
 
 
 
@@ -53,7 +53,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/The_Pet_Shop_Website |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/The_Pet_Shop_Website](Pet Shop) |
 
 
 
@@ -68,7 +68,7 @@
 | **Technologies** | HTML, CSS, and other tools used |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/Academy-Cinemas |
+| **Project link** | [https://github.com/CanisOris/HTML-AND-CSS-PROJECTS/tree/main/Academy-Cinemas](Cinema)  |
 
 
 
@@ -83,7 +83,7 @@
 | **Technologies** | [HTML, CSS, and other tools used] |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | https://github.com/CanisOris/Portfolio |
+| **Project link** | [https://github.com/CanisOris/Portfolio](Portfolio) |
 
 
 
