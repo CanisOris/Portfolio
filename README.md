@@ -83,7 +83,7 @@
 | **Technologies** | [HTML, CSS, and other tools used] |
 | **Features** |  |
 | **Skills practiced** |  |
-| **Project link** | [https://github.com/CanisOris/Portfolio](Portfolio) |
+| **Project link** | [https://github.com/CanisOris/Portfolio] (Portfolio) |
 
 
 
