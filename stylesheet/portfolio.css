@@ -131,20 +131,32 @@ footer {
 }
 
 .Navbar a {
-    float: left;
+    /* float: left; */
+    float: none;
     display: block;
     color: var(--text-bright);
     padding: 14px 16px;
     text-decoration: none;
     font-family: Avant Garde, Helvetica;
-    font-size: 20px;
-    width: 110px;
+    /* font-size: 20px; */
+    font-size: 1rem;
     text-align: center;
     position: relative;
-
+min-height: 48px;
     -webkit-animation: moveNavText 5.75s;
-    animation: moveNavText 5.75s;
+    /* animation: moveNavText 5.75s; */
+    animation: moveNavText 1.5s ease 5s both;
+    width: 140px;
 }
+
+
+/* .Navbar a {
+    float: none;
+    width: 140px;
+    min-height: 48px;
+    font-size: 1rem;
+    animation: moveNavText 1.5s ease 5s both;
+} */
 
 @keyframes moveNavText {
     from {
@@ -160,11 +172,43 @@ footer {
     background-color: var(--accent-gold);
     color: var(--bg-deep-navy);
     font-weight: bold;
+    
 }
 
 .Navbar a.active {
     background-color: var(--bg-panel-light);
 }
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    overflow: visible;
+    animation: moveNav 5s ease both;
+}
+
+
+
+.Navbar a:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--accent-gold);
+    outline-offset: -3px;
+}
+
+.Desktop_Menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.Mobile_Menu {
+    display: none;
+}
+
+.Mobile_Menu summary {
+    animation: moveNavText 2.5s ease 5s both;
+}
+
 
 #Home {
     position: relative;
@@ -239,70 +283,8 @@ footer {
 
 }
 
-input[type=text] {
-    width: 100%;
 
-    padding: 12px;
 
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-
-    box-sizing: border-box;
-
-    margin-top: 6px;
-
-    margin-bottom: 16px;
-
-    resize: vertical;
-
-    font-family: Perpetua, Rockwell Extra Bold;
-    background-color: var(--bg-deep-navy);
-
-    color: var(--text-bright);
-
-}
-
-input[type=text]:hover {
-    box-shadow: 0 0 5px var(--accent-glow) inset;
-}
-
-input[type=submit] {
-    background-color: var(--bg-deep-navy);
-    color: var(--accent-gold);
-    font-weight: bold;
-
-    padding: 12px 20px;
-
-    border: 1px solid var(--accent-gold);
-    border-radius: 4px;
-
-    cursor: pointer;
-
-    display: block;
-
-    margin-left: auto;
-
-    margin-right: auto;
-    font-family: Perpetua, Rockwell Extra Bold;
-}
-
-input[type=submit]:hover {
-    background-color: var(--accent-gold);
-    color: var(--bg-deep-navy);
-    transform: scale(1.5);
-
-    transition: transform 1.5s;
-
-}
-
-form {
-    border-radius: 5px;
-
-    background-color: var(--bg-panel-dark);
-    padding: 10px;
-
-    font-family: "Trebuchet MS", Optima;
-}
 
 html {
     overflow-x: visible;
@@ -327,39 +309,7 @@ p {
     text-align: center;
 }
 
-.Navbar {
-    position: fixed;
-    top: 0;
-    overflow: visible;
-    animation: moveNav 5s ease both;
-}
 
-.Desktop_Menu {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Navbar a {
-    float: none;
-    width: auto;
-    min-height: 48px;
-    font-size: 1rem;
-    animation: moveNavText 1.5s ease 5s both;
-}
-
-.Navbar a:focus-visible,
-summary:focus-visible {
-    outline: 3px solid var(--accent-gold);
-    outline-offset: -3px;
-}
-
-.Mobile_Menu {
-    display: none;
-}
-
-.Mobile_Menu summary {
-    animation: moveNavText 2.5s ease 5s both;
-}
 
 #Home,
 .Row {
@@ -507,6 +457,195 @@ footer p img {
     border: 0;
 }
 
+/* ========[Form]================================================================== */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+    background-color: var(--bg-deep-navy);
+    color: var(--text-bright);
+
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px var(--accent-glow) inset;
+}
+
+input[type=submit] {
+    background-color: var(--bg-deep-navy);
+    color: var(--accent-gold);
+    font-weight: bold;
+
+    padding: 12px 20px;
+
+    border: 1px solid var(--accent-gold);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+
+input[type=submit]:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-deep-navy);
+    transform: scale(1.5);
+
+    transition: transform 1.5s;
+
+}
+
+form {
+    border-radius: 5px;
+
+    background-color: var(--bg-panel-dark);
+    padding: 10px;
+
+    font-family: "Trebuchet MS", Optima;
+}
+
+#About .Column_2,
+#Contact .Column_2 {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#Contact .Column_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(24px, 4vw, 56px);
+}
+
+#Contact .Column_1>h1 {
+    text-align: left;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 560px;
+    align-self: center;
+}
+
+#Contact .Contact_Form {
+    display: grid;
+    gap: 22px;
+    width: 100%;
+    max-width: 560px;
+    align-self: center;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Contact .Form_Intro {
+    padding: 0;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: #b8c4d8;
+    text-align: left;
+}
+
+.Form_Field {
+    display: grid;
+    gap: 8px;
+    min-width: 0;
+}
+
+.Contact_Form label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+#Contact .Contact_Form input,
+#Contact .Contact_Form textarea {
+    width: 100%;
+    margin: 0;
+    padding: 14px 16px;
+    border: 1px solid #41506b;
+    border-radius: 12px;
+    background: #101a2d;
+    color: var(--text-bright);
+    font: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-shadow: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Contact_Form input::placeholder,
+.Contact_Form textarea::placeholder {
+    color: #9baac0;
+    opacity: 1;
+}
+
+#Contact .Contact_Form input:hover,
+#Contact .Contact_Form textarea:hover {
+    border-color: #71809c;
+    box-shadow: none;
+}
+
+#Contact .Contact_Form input:focus,
+#Contact .Contact_Form textarea:focus {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 2px;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 5px rgba(223, 159, 67, 0.12);
+}
+
+.Contact_Form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.Send_Button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 18px;
+    border: 1px solid var(--accent-gold);
+    border-radius: 12px;
+    background: var(--accent-gold);
+    color: var(--bg-deep-navy);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Send_Button span {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.Send_Button:hover {
+    background: #efb55d;
+    box-shadow: 0 6px 20px rgba(223, 159, 67, 0.18);
+}
+
+.Send_Button:focus-visible {
+    outline: 2px solid var(--text-bright);
+    outline-offset: 4px;
+}
+
 /* ========[Media]================================================================== */
 
 @media (max-width: 768px) {
@@ -644,12 +783,7 @@ footer p img {
 }
 
 
-#About .Column_2,
-#Contact .Column_2 {
-    position: relative;
-    padding: 0;
-    overflow: hidden;
-}
+
 
 @media (min-width: 769px) {
 
@@ -675,123 +809,3 @@ footer p img {
     }
 }
 
-#Contact .Column_1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: clamp(24px, 4vw, 56px);
-}
-
-#Contact .Column_1>h1 {
-    text-align: left;
-    margin-bottom: 12px;
-    width: 100%;
-    max-width: 560px;
-    align-self: center;
-}
-
-#Contact .Contact_Form {
-    display: grid;
-    gap: 22px;
-    width: 100%;
-    max-width: 560px;
-    align-self: center;
-    background: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#Contact .Form_Intro {
-    padding: 0;
-    font: inherit;
-    font-size: 1rem;
-    line-height: 1.6;
-    letter-spacing: 0;
-    color: #b8c4d8;
-    text-align: left;
-}
-
-.Form_Field {
-    display: grid;
-    gap: 8px;
-    min-width: 0;
-}
-
-.Contact_Form label {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text-main);
-}
-
-#Contact .Contact_Form input,
-#Contact .Contact_Form textarea {
-    width: 100%;
-    margin: 0;
-    padding: 14px 16px;
-    border: 1px solid #41506b;
-    border-radius: 12px;
-    background: #101a2d;
-    color: var(--text-bright);
-    font: inherit;
-    font-size: 1rem;
-    line-height: 1.5;
-    box-shadow: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.Contact_Form input::placeholder,
-.Contact_Form textarea::placeholder {
-    color: #9baac0;
-    opacity: 1;
-}
-
-#Contact .Contact_Form input:hover,
-#Contact .Contact_Form textarea:hover {
-    border-color: #71809c;
-    box-shadow: none;
-}
-
-#Contact .Contact_Form input:focus,
-#Contact .Contact_Form textarea:focus {
-    outline: 2px solid var(--accent-gold);
-    outline-offset: 2px;
-    border-color: var(--accent-gold);
-    box-shadow: 0 0 0 5px rgba(223, 159, 67, 0.12);
-}
-
-.Contact_Form textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-.Send_Button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    width: 100%;
-    min-height: 52px;
-    padding: 14px 18px;
-    border: 1px solid var(--accent-gold);
-    border-radius: 12px;
-    background: var(--accent-gold);
-    color: var(--bg-deep-navy);
-    font: inherit;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.Send_Button span {
-    font-size: 1.4rem;
-    line-height: 1;
-}
-
-.Send_Button:hover {
-    background: #efb55d;
-    box-shadow: 0 6px 20px rgba(223, 159, 67, 0.18);
-}
-
-.Send_Button:focus-visible {
-    outline: 2px solid var(--text-bright);
-    outline-offset: 4px;
-}
