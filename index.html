@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--Head-->
 
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>M@ Stewart Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
 </head>
@@ -15,20 +15,35 @@
 <body class="Background">
 
     <!--Navbar-->
-    <div class="Navbar">
-        <a class="active" href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
-    </div>
-
-    <!--Breaks inserted to add space between navbar and the first heading-->
-    <br>
-    <br>
+    <nav class="Navbar" aria-label="Main navigation">
+        <div class="Desktop_Menu">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <!-- Native HTML disclosure: keyboard accessible, no JavaScript. -->
+        <details class="Mobile_Menu">
+            <summary>
+                <span class="Visually_Hidden">Toggle navigation menu</span>
+                <span class="Hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </summary>
+            <div class="Menu_Links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </details>
+    </nav>
 
     <!--Background video-->
     <div id="Home">
-        <video autoplay muted loop id="Typing_Video">
+        <video autoplay muted loop playsinline id="Typing_Video">
             <source src="images/video/Typing.mp4" type="video/mp4">
             <!--Display message if video fails to run-->
             Your browser does not support HTML5 video.
@@ -61,22 +76,18 @@
     <div class="Row" id="About">
         <!--Left column-->
         <div class="Column_2">
-            <img style="width: auto;height: 100%;" src="./images/myoffice.jpg"
-                alt="Replace with your own image and description">
+            <img class="About_Image" src="./images/myoffice.jpg"
+                alt="Matthew Stewart working with a tablet">
         </div>
         <!--Right column-->
         <div class="Column_1">
             <h1>About</h1>
             <p>
-                I am a software developer who loves to code! As a father of two, I enjoy time with my family and
-                traveling.
-                <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
-                    Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and
-                programming languages: HTML, CSS, JavaScript, SQL, C# and more.
-                <br>
-                <br>I am a full-stack developer and would love to work with you on your project. <a
-                    href="#Contact">Contact</a> me below!
+                I'm Matthew Stewart, a software engineer with more than 20 years of experience building enterprise
+                applications across healthcare and manufacturing. I specialize in C#, .NET, SQL, and web development,
+                with projects ranging from secure patient portals and hospital reporting tools to data integrations
+                and workflow automation. I enjoy turning complex business needs into reliable, practical solutions
+                and mentoring teams from initial planning through deployment.
             </p>
         </div>
     </div>
@@ -86,12 +97,7 @@
         <!--Left column-->
         <div class="Column_1">
             <h1>GitHub</h1>
-            <p>
-                You can view my coding projects on my GitHub profile here:
-                <br>
-            <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a>
-            </p>
-            </p>
+            <p>You can view my coding projects on my GitHub profile here:</p><p class="center"><a href="https://github.com/canisoris" target="_blank" rel="noopener noreferrer">Matthew Stewart on GitHub</a></p>
         </div>
         <!--Right column-->
         <div class="Column_2">
@@ -109,15 +115,21 @@
         <div class="Column_1">
             <h1>Contact</h1>
             <!--This specifies where and how to send the form data; we are leaving it blank-->
-            <form action="" method="POST">
-                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message:</label>
-                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                <input type="submit" value="SUBMIT">
+            <form class="Contact_Form" action="" method="POST">
+                <p class="Form_Intro">Have a project in mind? Let's connect.</p>
+                <div class="Form_Field">
+                    <label for="Name">Your name</label>
+                    <input type="text" id="Name" name="Name" autocomplete="name" placeholder="Full name" required>
+                </div>
+                <div class="Form_Field">
+                    <label for="Email">Email address</label>
+                    <input type="email" id="Email" name="Email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+                <div class="Form_Field">
+                    <label for="Message">Your message</label>
+                    <textarea id="Message" name="Message" rows="5" placeholder="Tell me a little about your project..." required></textarea>
+                </div>
+                <button class="Send_Button" type="submit">Send message <span aria-hidden="true">&#8599;</span></button>
             </form>
         </div>
     </div>
@@ -130,7 +142,7 @@
 
         </div>
         <p class="center"><img src="./images/BlueDragon.png" alt="Blue Dragon"><br>
-            &copyBlue Dragon
+            &copy;Blue Dragon
 
         </p>
 
@@ -138,3 +150,5 @@
 </body>
 
 </html>
+
+
