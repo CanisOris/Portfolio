@@ -491,18 +491,12 @@ input[type=submit] {
     background-color: var(--bg-deep-navy);
     color: var(--accent-gold);
     font-weight: bold;
-
     padding: 12px 20px;
-
     border: 1px solid var(--accent-gold);
     border-radius: 4px;
-
     cursor: pointer;
-
     display: block;
-
     margin-left: auto;
-
     margin-right: auto;
     font-family: Perpetua, Rockwell Extra Bold;
 }
@@ -512,9 +506,7 @@ input[type=submit]:hover {
     background-color: var(--accent-gold);
     color: var(--bg-deep-navy);
     transform: scale(1.5);
-
     transition: transform 1.5s;
-
 }
 
 
