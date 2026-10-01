@@ -24,12 +24,7 @@
 
 }
 
-/* ---------------------------------- */
 
-
-.center {
-    text-align: center;
-}
 
 /* -------------------------------------- */
 html {
@@ -56,9 +51,11 @@ h1 {
     overflow-wrap: anywhere;
 }
 
-.white-text {
-    color: var(--text-bright);
-}
+/* ---------------------------------- */
+
+
+
+
 
 p {
     font-family: Perpetua, Rockwell Extra Bold;
@@ -75,9 +72,7 @@ p {
 
 }
 
-.center {
-    text-align: center;
-}
+
 
 a {
     color: var(--accent-gold);
@@ -217,22 +212,29 @@ summary:focus-visible {
     z-index: 0;
 }
 
-.Video_Text {
+.video-text {
     z-index: 1;
     min-height: 350px;
+    text-align: center;
 }
 
-.Video_Text {
+.video-text {
     background: var(--video-overlay);
     color: var(--text-bright);
     width: 100%;
-
     padding: 20px;
-
     position: relative;
-
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s;
+}
+
+.video-text h1 {
+    color: var(--text-bright);
+    padding: 44px 0 44px 0;
+}
+
+.video-text p {
+    text-align: center;
 }
 
 @keyframes moveVideoText {
