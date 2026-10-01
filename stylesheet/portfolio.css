@@ -113,28 +113,19 @@ q {
 
 #GitHub img {
     filter: grayscale(75%);
-    /* This rids our pictures of 75% of their color */
     border-radius: 8px;
-    /* Gives all images slightly rounded corners */
     max-width: 100%;
-    /* Ensures all images stay within the width of their container */
     height: 340px;
-    /* Sets the height of all images */
     display: block;
-    /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto;
-    /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
 }
 
 /* Image element hover effects */
 #GitHub img:hover {
     filter: grayscale(5%);
-    /* Brings back most of the image's color when hovered over */
     transition: transform 1s;
-    /* Transition lasts 1 second */
     transform: scale(1.1);
-    /* Image is increased slightly when hovered over */
 }
 
 
@@ -142,7 +133,6 @@ q {
 /* Styling for footer element */
 footer {
     padding: 2%;
-    /* This gives the footer padding that is equal to 2% of the width of the element's area */
     background-color: var(--bg-deep-navy);
 }
 
@@ -151,20 +141,13 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden;
-    /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
     background-color: var(--bg-deep-navy);
     position: fixed;
-    /* This keeps the navbar at the top of the screen as we scroll */
     top: 0;
-    /* This ensures no space is displayed above the navbar */
     width: 100%;
-    /* This makes the navbar span the entire width of the page */
-    z-index: 1;
-    /* This ensures other elements don't display over the navbar */
+    z-index: 4;
     -webkit-animation: moveNav 5s;
-    /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
     animation: moveNav 5s;
-    /* This applies the moveNav animation for all other browsers */
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -173,37 +156,26 @@ footer {
         left: -100vw;
     }
 
-    /* The navbar is starting off screen to the left */
     to {
         left: 0vw;
     }
-
-    /* This moves the navbar into place on the screen */
 }
 
 /* Navbar links */
 .Navbar a {
     float: left;
-    /* This specifies that the text floats on the left on the navbar */
     display: block;
-    /* This ensures that other text will be displayed on the same line or row, instead of a new line */
     color: var(--text-bright);
     padding: 14px 16px;
-    /* This adds padding around our text */
     text-decoration: none;
-    /* This gets rid of the underlines under the text on our navbar */
     font-family: Avant Garde, Helvetica;
-    /* This specifies the font family for text on our navbar */
     font-size: 20px;
-    /* This specifies the font size for text on our navbar */
+    width: 110px;
     text-align: center;
-    /* This centers the text within its container */
     position: relative;
-    /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+
     -webkit-animation: moveNavText 5.75s;
-    /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 5.75s;
-    /* Applies the moveNavText animation for 5.75s */
 }
 
 /* moveNavText animation effect for moving the navbar text from above the view to the navbar */
@@ -212,12 +184,9 @@ footer {
         top: -100vw;
     }
 
-    /* This sets the navbar text 100% above the viewport */
     to {
         top: 0vw;
     }
-
-    /* This lowers the navbar text onto the navbar */
 }
 
 
@@ -227,16 +196,14 @@ footer {
     background-color: var(--accent-gold);
     color: var(--bg-deep-navy);
     font-weight: bold;
-    /* This makes the text on the navbar bold when hovered over */
 }
 
 /* Navbar home button */
 .Navbar a.active {
-    /* This targets the a element on the navbar with the "active" class */
     background-color: var(--bg-panel-light);
 }
 
-/***** END OF NAVBAR STYLING *****/
+
 
 /***** VIDEO STYLING *****/
 /* Formatting for background video */
