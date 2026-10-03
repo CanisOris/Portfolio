@@ -31,7 +31,12 @@ html {
 
     /* overflow-x: hidden; */
     overflow-x: visible;
-    scroll-behavior: smooth;
+}
+
+/* kevin powell */
+/* sets margin on target link instead of using padding */
+:taget {
+    scroll-margin: 8vb;
 }
 
 body {
@@ -402,6 +407,90 @@ img {
 
 
 
+/* ========[Projects]================================================================ */
+.Projects_Section {
+    padding: clamp(20px, 3vw, 48px);
+    align-content: center;
+    gap: 16px;
+}
+
+#github-container .Projects_Section h1 {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.Projects_Hint {
+    display: none;
+    color: var(--text-main);
+    font-size: 0.875rem;
+}
+
+.Projects_Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+    gap: 16px;
+    min-width: 0;
+}
+
+.Projects_Grid:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 4px;
+}
+
+.Project_Card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--bg-panel-dark);
+}
+
+.Project_Number {
+    color: var(--accent-gold);
+    font: 600 1.5rem "Orbitron", sans-serif;
+}
+
+.Project_Card h2 {
+    color: var(--text-bright);
+    font: 600 1.125rem/1.4 Arial, sans-serif;
+}
+
+.Project_Card p {
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.Project_Status {
+    margin-top: auto;
+    color: var(--accent-gold);
+    font: 600 0.75rem/1.5 Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .Projects_Hint {
+        display: block;
+    }
+
+    .Projects_Grid {
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: 85%;
+        overflow-x: auto;
+        padding-block-end: 16px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-gold) var(--bg-panel-dark);
+    }
+
+    .Project_Card {
+        scroll-snap-align: center;
+    }
+}
+
 /* ========[Footer]================================================================== */
 
 footer {
@@ -459,6 +548,7 @@ textarea {
 
 textarea {
     resize: vertical;
+    field-sizing: content;
 }
 
 input[type=submit] {
@@ -780,8 +870,17 @@ input[type=submit]:hover {
 
 
 
+/* kevin powell  */
+/* check if they opted out of motion effects */
+@media (prefers-reduced-motion: no-preference) {
+    html {
 
-@media (min-width: 769px) {
+        scroll-behavior: smooth;
+    }
+}
+
+
+@media (max-width: 768px) {
 
     #About .About_Image,
     #Contact .img-contact {
@@ -792,10 +891,7 @@ input[type=submit]:hover {
         object-fit: cover;
         object-position: center;
     }
-}
 
-
-@media (max-width: 768px) {
     #GitHub>.Column_2 {
         grid-row: 1;
     }
