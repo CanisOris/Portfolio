@@ -8,6 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>M@ Stewart Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    <script>
+        // Allow the desktop menu entrance only for the initial desktop view.
+        // changing back from phone view it was loading the menu animation again
+        const desktopMenu = window.matchMedia('(min-width: 769px)');
+        if (desktopMenu.matches) {
+            document.documentElement.classList.add('Nav_Entrance');
+            const finishMenuEntrance = function () {
+                document.documentElement.classList.remove('Nav_Entrance');
+            };
+            desktopMenu.addEventListener('change', finishMenuEntrance, { once: true });
+            document.addEventListener('animationend', function (event) {
+                if (event.animationName === 'moveNavText') {
+                    finishMenuEntrance();
+                }
+            });
+        }
+
+        // Start at the top on page entry, including refreshes and restored visits.
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        // on load scroll to the top 
+        window.addEventListener('pageshow', function () {
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        });
+    </script>
 </head>
 
 <!--Body-->

@@ -107,8 +107,6 @@ q {
     top: 0;
     width: 100%;
     z-index: 4;
-    -webkit-animation: moveNav 5s;
-    animation: moveNav 5s;
 }
 
 @keyframes moveNav {
@@ -134,9 +132,6 @@ q {
     text-align: center;
     position: relative;
     min-height: 48px;
-    -webkit-animation: moveNavText 5.75s;
-    /* animation: moveNavText 5.75s; */
-    animation: moveNavText 1.5s ease 5s both;
     width: 140px;
 }
 
@@ -174,9 +169,15 @@ q {
     position: fixed;
     top: 0;
     overflow: visible;
+}
+
+.Nav_Entrance .Navbar {
     animation: moveNav 5s ease both;
 }
 
+.Nav_Entrance .Desktop_Menu a {
+    animation: moveNavText 1.5s ease 5s both;
+}
 
 
 .Navbar a:focus-visible,
@@ -196,9 +197,6 @@ summary:focus-visible {
     display: none;
 }
 
-.Mobile_Menu summary {
-    animation: moveNavText 2.5s ease 5s both;
-}
 
 
 #Home {
