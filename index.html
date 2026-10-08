@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>M@ Stewart Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
     <script>
         // Allow the desktop menu entrance only for the initial desktop view.
         // changing back from phone view it was loading the menu animation again
@@ -154,22 +154,23 @@
         <!--Contact form, right column-->
         <div class="Column_1">
             <h1>Contact</h1>
-            <!--This specifies where and how to send the form data; we are leaving it blank-->
+            
             <form class="Contact_Form" action="" method="POST">
                 <p class="Form_Intro">Have a project in mind? Let's connect.</p>
                 <div class="Form_Field">
                     <label for="Name">Your name</label>
-                    <input type="text" id="Name" name="Name" autocomplete="name" placeholder="Full name" required>
+                    <input type="text" id="Name" name="Name" autocomplete="name" placeholder="Full name"
+                           class="form-input-text" required>
                 </div>
                 <div class="Form_Field">
                     <label for="Email">Email address</label>
                     <input type="email" id="Email" name="Email" autocomplete="email" placeholder="you@example.com"
-                        required>
+                           class="form-input-text" required>
                 </div>
                 <div class="Form_Field">
                     <label for="Message">Your message</label>
                     <textarea id="Message" name="Message" rows="5" placeholder="Tell me a little about your project..."
-                        required></textarea>
+                              class="form-textarea" required></textarea>
                 </div>
                 <button class="Send_Button" type="submit">Send message <span aria-hidden="true">&#8599;</span></button>
             </form>

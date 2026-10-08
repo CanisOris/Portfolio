@@ -1,0 +1,171 @@
+
+
+
+
+/* ========[Media]================================================================== */
+
+@media (max-width: 768px) {
+    .Desktop_Menu {
+        display: none;
+    }
+
+    .Mobile_Menu {
+        display: block;
+        position: relative;
+    }
+
+        .Mobile_Menu summary {
+            padding: 14px 20px;
+            min-height: 48px;
+            cursor: pointer;
+            color: var(--text-bright);
+            font-family: Arial, sans-serif;
+        }
+
+    .Menu_Links {
+        position: absolute;
+        top: 100%;
+        inset-inline: 0;
+        background: var(--bg-deep-navy);
+        border-bottom: 1px solid var(--border-color);
+        max-height: calc(100dvh - 60px);
+        overflow-y: auto;
+    }
+
+        .Menu_Links a {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding-inline: 20px;
+        }
+
+    .Row {
+        grid-template-columns: 1fr;
+    }
+
+    .Column_1,
+    .Column_2 {
+        min-height: 0;
+    }
+
+    .Video_Text {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Mobile_Menu summary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin-left: auto;
+        padding: 16px;
+        list-style: none;
+    }
+
+        .Mobile_Menu summary::marker {
+            content: "";
+        }
+
+        .Mobile_Menu summary::-webkit-details-marker {
+            display: none;
+        }
+
+    .Hamburger {
+        position: relative;
+        display: block;
+        width: 26px;
+        height: 22px;
+    }
+
+        .Hamburger span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            background: currentColor;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+            .Hamburger span:nth-child(1) {
+                top: 0;
+            }
+
+            .Hamburger span:nth-child(2) {
+                top: 10px;
+            }
+
+            .Hamburger span:nth-child(3) {
+                top: 20px;
+            }
+
+    .Mobile_Menu[open] .Hamburger span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .Mobile_Menu[open] .Hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .Mobile_Menu[open] .Hamburger span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Navbar,
+    .Navbar a,
+    .Mobile_Menu summary {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
+
+/* kevin powell  */
+/* check if they opted out of motion effects */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #About .About_Image,
+    #Contact .img-contact {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #GitHub > .Column_2 {
+        grid-row: 1;
+    }
+
+    #GitHub > .Column_1 {
+        grid-row: 2;
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+
+@import 'color.css';
+@import 'portfolio.css';
+@import 'form.css';
+@import 'media.css';
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* -------------------------------------- */
+html {
+    /* overflow-x: hidden; */
+    overflow-x: visible;
+}
+
+/* kevin powell */
+/* sets margin on target link instead of using padding */
+:taget {
+    scroll-margin: 8vb;
+}
+
+body {
+    margin: 0%;
+    line-height: 1.6;
+    background-color: var(--bg-deep-navy);
+    color: var(--text-main);
+}
+

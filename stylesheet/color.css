@@ -1,0 +1,14 @@
+
+
+:root {
+    --bg-deep-navy: #0b1021;
+    --bg-panel-dark: #152036;
+    --bg-panel-light: #23314d;
+    --accent-gold: #df9f43;
+    --text-main: #e2e8f0;
+    --text-bright: #ffffff;
+    --text-gray: #7E878E;
+    --border-color: #314163;
+    --video-overlay: rgba(11, 16, 33, 0.7);
+    --accent-glow: rgba(223, 159, 67, 0.5);
+}
