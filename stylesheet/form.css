@@ -1,7 +1,16 @@
 
 
 /* ========[Variables]============================================================= */
-
+:root {
+    --text-muted: #b8c4d8;
+    --border-input: #41506b;
+    --bg-input: #101a2d;
+    --text-placeholder: #9baac0;
+    --border-input-hover: #71809c;
+    --shadow-focus: rgba(223, 159, 67, 0.12);
+    --accent-gold-hover: #efb55d;
+    --shadow-button-hover: rgba(223, 159, 67, 0.18);
+}
 
 /* ========[General Form Layout & Containers]====================================== */
 form {
@@ -11,6 +20,11 @@ form {
     padding: 10px;
     /* font-family: "Trebuchet MS", Optima; */
     font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+/* useful flip value */
+.hidden {
+  display: none;
 }
 
 #About .Column_2,
@@ -182,4 +196,8 @@ form {
 .Send_Button:focus-visible {
     outline: 2px solid var(--text-bright);
     outline-offset: 4px;
+}
+
+.form-error-message{
+    color: red;
 }
