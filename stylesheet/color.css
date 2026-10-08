@@ -11,4 +11,12 @@
     --border-color: #314163;
     --video-overlay: rgba(11, 16, 33, 0.7);
     --accent-glow: rgba(223, 159, 67, 0.5);
+    --text-muted: #b8c4d8;
+    --border-input: #41506b;
+    --bg-input: #101a2d;
+    --text-placeholder: #9baac0;
+    --border-input-hover: #71809c;
+    --shadow-focus: rgba(223, 159, 67, 0.12);
+    --accent-gold-hover: #efb55d;
+    --shadow-button-hover: rgba(223, 159, 67, 0.18);
 }
