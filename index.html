@@ -7,9 +7,9 @@
     <title>M@ Stewart Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
-     <script src="./js1/site.js" defer></script>
+    <script src="./js1/site.js" defer></script>
     <script>
         // Allow the desktop menu entrance only for the initial desktop view.
         // changing back from phone view it was loading the menu animation again
@@ -41,7 +41,7 @@
 <!--Body-->
 
 <body class="Background">
-<!-- <h1 id="page-title" ></h1> -->
+    <!-- <h1 id="page-title" ></h1> -->
     <!--Navbar-->
     <nav class="Navbar" aria-label="Main navigation">
         <div class="Desktop_Menu">
@@ -81,7 +81,7 @@
         <!--Video text-->
         <div class="video-text">
             <h1>Matthew Stewart's<br>Portfolio</h1>
-            <div >
+            <div>
                 <q>You don't understand anything until you learn it more than one way.
                     <br> ~Marvin Minsky</q>
             </div>
@@ -116,15 +116,33 @@
                 <div class="title">GitHub</div>
             </h1>
             <p>You can view my coding projects on my GitHub profile here:</p>
-            <p class="center"><a href="https://github.com/canisoris" target="_blank" rel="noopener noreferrer">Matthew
-                    Stewart on GitHub</a></p>
+            <ul>
+                <li>Window WPF</li>
+                <li>React</li>
+                <li>Console</li>
+                
+         
+
+                <li>Tech Academy</li>
+                <ul>
+                    <li>
+                        <a href="https://canisoris.github.io/JAVASCRIPT-PROJECTS/" target="_blank" rel="noopener noreferrer">JavaScript Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://canisoris.github.io/HTML-AND-CSS-PROJECTS/" target="_blank" rel="noopener noreferrer">HTML/CSS Projects</a>
+                        
+                    </li>
+                </ul>
+            </ul>
+  
+
         </div>
         <!--Right column-->
         <div class="Column_2 Projects_Section">
             <h1 id="projects-heading">Projects</h1>
             <p class="Projects_Hint" id="projects-hint">Swipe sideways to explore projects.</p>
-            <div class="Projects_Grid" role="region" aria-labelledby="projects-heading"
-                aria-describedby="projects-hint" tabindex="0">
+            <div class="Projects_Grid" role="region" aria-labelledby="projects-heading" aria-describedby="projects-hint"
+                tabindex="0">
                 <article class="Project_Card">
                     <span class="Project_Number" aria-hidden="true">01</span>
                     <h2>AI</h2>
@@ -156,23 +174,23 @@
         <!--Contact form, right column-->
         <div class="Column_1">
             <h1>Contact</h1>
-            
+
             <form class="Contact_Form" action="" method="POST">
                 <p class="Form_Intro">Have a project in mind? Let's connect.</p>
                 <div class="Form_Field">
                     <label for="Name">Your name</label>
                     <input type="text" id="Name" name="Name" autocomplete="name" placeholder="Full name"
-                           class="form-input-text" required>
+                        class="form-input-text" required>
                 </div>
                 <div class="Form_Field">
                     <label for="Email">Email address</label>
                     <input type="email" id="Email" name="Email" autocomplete="email" placeholder="you@example.com"
-                           class="form-input-text" required>
+                        class="form-input-text" required>
                 </div>
                 <div class="Form_Field">
                     <label for="Message">Your message</label>
                     <textarea id="Message" name="Message" rows="5" placeholder="Tell me a little about your project..."
-                              class="form-textarea" required></textarea>
+                        class="form-textarea" required></textarea>
                 </div>
                 <button class="Send_Button" type="submit">Send message <span aria-hidden="true">&#8599;</span></button>
             </form>
