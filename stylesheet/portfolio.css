@@ -425,8 +425,15 @@ img {
 
 .Project_Image {
     width: 100%;
-    height: auto;
+    max-height: 248px;
     border-radius: 8px;
+}
+
+.Project_Image_Tall {
+    width: 100%;
+    max-height: 248px;
+    border-radius: 8px;
+
 }
 
 .Project_Link h3 {
