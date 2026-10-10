@@ -236,7 +236,7 @@ summary:focus-visible {
 
 
 /* ========[CONTAINER TYPES]======================================================== */
-#github-container img {
+#github-container #github {
     filter: grayscale(25%);
     border-radius: 8px;
     max-width: 64px;
@@ -246,7 +246,7 @@ summary:focus-visible {
     margin-right: auto;
 }
 
-#github-container img:hover {
+#github-container #github:hover {
     filter: grayscale(5%);
     transition: transform 1s;
     transform: scale(1.1);
@@ -380,7 +380,7 @@ img {
 
 .Projects_Grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     gap: 16px;
     min-width: 0;
 }
@@ -414,6 +414,33 @@ img {
 .Project_Card p {
     font-size: 1rem;
     letter-spacing: 0;
+}
+
+.Project_Link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.Project_Image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Project_Link h3 {
+    font: 600 1.25rem/1.4 Arial, sans-serif;
+}
+
+.Project_Link:hover h3 {
+    text-decoration: underline;
+}
+
+.Project_Link:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 4px;
+    border-radius: 8px;
 }
 
 .Project_Status {
