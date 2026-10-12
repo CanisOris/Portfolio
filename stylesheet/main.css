@@ -39,3 +39,33 @@ body {
     color: var(--text-main);
 }
 
+.enhanced-image {
+  border-radius: 4px;
+  /* 
+    brightness(1.2) = 20% brighter 
+    contrast(1.2) = 20% more contrast
+    saturate(1.5) = 50% more color saturation to make the dots pop
+  */
+  filter: brightness(1.2) contrast(1.8) saturate(2.4);
+  transition: filter 0.3s ease; /* Optional: smooth transition if you want to add hover effects */
+}
+
+/*  */
+.enhanced-image:hover {
+  filter: brightness(1.6) contrast(2.2) saturate(2.8);
+}
+.enhanced2-image {
+  border-radius: 4px;
+  /* 
+    brightness(1.2) = 20% brighter 
+    contrast(1.2) = 20% more contrast
+    saturate(1.5) = 50% more color saturation to make the dots pop
+  */
+  filter: brightness(1) contrast(1) saturate(1);
+  transition: filter 0.3s ease; /* Optional: smooth transition if you want to add hover effects */
+}
+
+/*  */
+.enhanced2-image:hover {
+  filter: brightness(1.6) contrast(1.2) saturate(2.4);
+}
